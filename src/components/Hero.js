@@ -1,18 +1,12 @@
-import styled from "styled-components"
-import {colors} from "../../src/styles/StylesVariables"
+import styled from "styled-components";
+import { colors } from "../../src/styles/StylesVariables";
 const Hero = () => {
-    return (
-        <HeroContainer>
-
-        </HeroContainer>
-    )
+  return <HeroContainer></HeroContainer>;
 };
 
 const HeroContainer = styled.div`
-height: 100vh;
-width: 100%;
-background-color: ${colors.whitePale};
-`
-
+  height: 100vh;
+  background-color: ${colors.whitePale};
+`;
 
 export default Hero;

@@ -1,17 +1,17 @@
 import styled from "styled-components";
 import { colors } from "../src/styles/StylesVariables";
 import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 function App() {
   return (
     <AppWrapper>
       <Hero />
+      <Footer />
     </AppWrapper>
   );
 }
 
 const AppWrapper = styled.div`
-  height: auto;
-  width: 100vw;
   background-color: ${colors.whitePale};
 `;
 
