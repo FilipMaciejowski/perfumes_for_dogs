@@ -1,7 +1,12 @@
 import styled from "styled-components";
 import { colors } from "../../src/styles/StylesVariables";
+
 const Footer = () => {
-  return <FooterContainer></FooterContainer>;
+  return (
+    <FooterContainer>
+     
+    </FooterContainer>
+  );
 };
 
 const FooterContainer = styled.div`
