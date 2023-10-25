@@ -4,6 +4,12 @@ import { colors, fonts } from "../../styles/StylesVariables";
 import { ReactComponent as PerfumesBottle } from "../../assets/images/PerfumesBottle.svg";
 
 const HeroMainContent = () => {
+  const scrollToForm = () => {
+    const formEl = document.getElementById("form-1");
+    if (formEl) {
+      formEl.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <HeroMainContentContainer>
       <HeadlineContainer>
@@ -12,7 +18,7 @@ const HeroMainContent = () => {
           Dette er en perfekt, rafinert duft. Blanding av eksotiske kryder og
           frukt gjør kjæredyren din, og deg kjempeglad.
         </SubHeadline>
-        <CTA>
+        <CTA onClick={() => scrollToForm()}>
           <strong>Få</strong> en <strong>gratis</strong> prøve flaske nå!
         </CTA>
       </HeadlineContainer>
